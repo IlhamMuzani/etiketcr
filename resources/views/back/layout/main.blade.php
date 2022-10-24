@@ -118,22 +118,40 @@
           <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Data Master</span>
           </li>
-          <li class="menu-item">
-            <a href="{{ url('user') }}" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-user"></i>
-              <div data-i18n="Basic">User</div>
-            </a>
           </li>
           <li class="menu-item">
             <a href="{{ url('role') }}" class="menu-link">
               <i class="menu-icon tf-icons bx bx-collection"></i>
               <div data-i18n="Basic">Role</div>
             </a>
+            <li class="menu-item">
+            <a href="{{ url('user') }}" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-user"></i>
+              <div data-i18n="Basic">User</div>
+            </a>
           </li>
           <li class="menu-item">
-            <a href="{{ url('complaint') }}" class="menu-link">
+            <a href="{{ url('level') }}" class="menu-link">
               <i class="menu-icon tf-icons bx bx-detail"></i>
-              <div data-i18n="Basic">Pengaduan</div>
+              <div data-i18n="Basic">Level</div>
+            </a>
+          </li>
+           <li class="menu-item">
+            <a href="{{ url('layanan') }}" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-detail"></i>
+              <div data-i18n="Basic">Layanan</div>
+            </a>
+          </li>
+           <li class="menu-item">
+            <a href="{{ url('produk') }}" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-detail"></i>
+              <div data-i18n="Basic">Produk</div>
+            </a>
+          </li>
+             <li class="menu-item">
+            <a href="{{ url('tiket') }}" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-detail"></i>
+              <div data-i18n="Basic">Tiket</div>
             </a>
           </li>
         </ul>

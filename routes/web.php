@@ -1,10 +1,14 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\Back\ComplaintController;
+use App\Http\Controllers\Back\TiketController;
 use App\Http\Controllers\Back\HomeController;
 use App\Http\Controllers\Back\RoleController;
+use App\Http\Controllers\Back\ProdukController;
+use App\Http\Controllers\Back\LevelController;
+use App\Http\Controllers\Back\LayananController;
 use App\Http\Controllers\Front\FrontController;
+use App\Http\Controllers\Back\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,11 +29,18 @@ Route::get('/login', [AuthController::class, 'login']);
 
 Route::get('/', [HomeController::class, 'index']);
 
+Route::resource('role', RoleController::class);
+Route::resource('tiket', TiketController::class);
+Route::resource('produk', ProdukController::class);
+Route::resource('user', UserController::class);
+Route::resource('layanan', LayananController::class);
+Route::resource('produk', ProdukController::class);
+Route::resource('level', LevelController::class);
+
 // Route::resource('user', UserController::class);
 Route::resource('role', RoleController::class);
 
-Route::resource('complaint', ComplaintController::class);
-Route::post('update-status', [ComplaintController::class, 'updateStatus']);
+Route::post('update-status', [TiketController::class, 'updateStatus']);
 
 // Front
 

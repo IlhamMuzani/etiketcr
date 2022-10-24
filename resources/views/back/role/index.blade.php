@@ -56,6 +56,7 @@
           @endforeach
         </tbody>
       </table>
+      {{ $roles->appends(Request::all())->links('pagination::bootstrap-4') }}
     </div>
   </div>
   <!--/ Basic Bootstrap Table -->
